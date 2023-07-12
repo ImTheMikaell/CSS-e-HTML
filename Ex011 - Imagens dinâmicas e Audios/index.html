@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir essa pagina em diferentes dispositivos ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/ImagemP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/ImagemM.png" type="image/png">
+        <img src="images/ImagemG.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzindo aúdios</h1>
+    <p>Vamos aprender a reproduzir aúdios em HTML5</p>
+
+    <!-- MP3 WAV OGG esses sao os formatos de audios compativeis-->
+    <audio preload="metadata" controls autoplay>
+        <source src="midias/Guts__Berserk__-__Cursed_____ft___amyoficial_.mp3" type="audio/mpeg">
+        <source src="midias/Guts__Berserk__-__Cursed_____ft___amyoficial_.ogg" type="audio/ogg">
+        <source src="midias/Guts__Berserk__-__Cursed_____ft___amyoficial_.wav" type="audio/wav">
+        <p>Seu navegador nao consegue reproduzir o audio. <a href="midias/Guts__Berserk__-__Cursed_____ft___amyoficial_.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
