@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+  background-image: linear-gradient(to right, rgb(182, 255, 231) 50%, rgb(65, 136, 113) ) ;
+}
+
+main {
+  width: 800px;
+  margin: auto;
+}
+
+h1 {
+  color: #2F6636;
+}
+
+#principal {
+  background-color: #2F6636;
+  color:white;
+  text-align: center
+}
+
+h2 {
+  color: #4CA658;
+}
+
+p {
+  text-align: justify;
+  text-indent: 30px;
+  font: normal bolder 1em "Times New Roman", serif;
+
+}
+
+.basico {
+  color: #4CA658;
+}
+
+.intermediario {
+  color: #99a64c;
+}
+
+.avancado {
+  color: #a64c4c;
+}
+
+.destaque {
+  background-color: #99a64c4f;
+  text-align: center;
+}

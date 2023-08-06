@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>personalizando links</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:visited {
+      color: rgb(124, 4, 4);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: yellow;
+    }
+
+    a::after {
+      content: "[link]"
+    }
+
+    a::before {
+      content: '➤';
+    }
+  </style>
+</head>
+<body>
+  <h1>Personalizando links</h1>
+  <ul>
+    <li><a href="https://github.com/ImTheMikaell" target="_blank">Repositório GitHub</a></li>
+    
+    <li><a href="https://www.youtube.com/channel/UCJKDdfKZPkP6uE-Om8b5sBg" target="_blank">Canal do YouTube</a></li>
+    
+    <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoEmVideo</a></li>
+  </ul>
+</body>
+</html>
