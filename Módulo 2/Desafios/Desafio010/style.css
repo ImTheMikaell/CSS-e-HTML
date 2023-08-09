@@ -24,15 +24,13 @@ header {
   width: 100vw;
 }
 
-
-
 header > p {
   text-align: center;
 }
 
 header > nav > ul {
   text-align: start;
-  margin: 0px;
+  margin: 0em 0em 0em 1em;
 }
 
 header > nav > ul > li {
@@ -59,7 +57,7 @@ header > nav > ul > li:active {
 header > h1 {
   color: white;
   font: normal 2em "Oswald";
-  padding: 0.3em;
+  padding: 0.3em 0em 0.3em 0em ;
   background-image: none;
   margin: 0em;
 }
@@ -77,8 +75,6 @@ h1 {
   background-image: linear-gradient(to right, #8fbea5be, white);
 }
 
-
-
 h2 {
   color: #1A5C38;
   font: normal 1.3em "Android";
@@ -95,6 +91,7 @@ p {
 
 a {
   background-color: #3CD983;
+  text-decoration: none;
 }
 
 a::after {
@@ -114,12 +111,12 @@ strong {
   color: #2d5e43;
 }
 
-
 main {
   background-color: white;
   margin: auto;
   padding: 0.3em;
   width: 50vw;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.274);
 }
 @media only screen and (max-width: 1024px) {
   main {
@@ -160,7 +157,6 @@ div {
   justify-content: center;
   margin: 1em 0em 1em 0em ;
 }
-
 
 section {
   background-color: #C5EBD6;
