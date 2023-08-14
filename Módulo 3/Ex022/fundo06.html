@@ -6,17 +6,24 @@
   <title></title>
   <style>
     body {
-      height: 100vh;
+      /* height: 100vh;
       background-color: black;
       background-image: url("./img/wallpaper002.jpg");
       background-position: center center;
       background-repeat: repeat-y;
       background-size: cover;
+      background-attachment: fixed; */
+
+      /* shorthand: 
+          color > image > repeat > position > attachment > position > / cover (obs: é necessário por a barra se for definir um size)
+      */
+
+      background: black url("./img/wallpaper002.jpg") no-repeat fixed left center / cover;
     }
 
     main {
       background-color: white;
-      width: 400px;
+      max-width: 450px;
       padding: 10px;
       margin: auto;
       border: 1px solid darkblue ;
