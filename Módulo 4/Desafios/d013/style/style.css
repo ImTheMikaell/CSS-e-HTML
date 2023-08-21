@@ -14,7 +14,7 @@ html, body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: blue url("../img/fundo-madeira.jpg") no-repeat fixed top center / cover;
+  background: gray url("../img/fundo-madeira.jpg") no-repeat fixed top center / cover;
 }
 
 main {
