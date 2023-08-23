@@ -7,10 +7,13 @@
 </head>
 <body>
   <h1>Meu primeiro formulário</h1>
-  <form action="">
-    <p>Nome: <input type="text" name="Nome" id="nome"></p>
-    <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"> </p>
-    <p><input type="button" value="Enviar"></p>
+  <form action="cadastro" method="POST" autocomplete="off">
+    <p><label for="inome">Nome
+      :</label>
+       <input type="text" name="Nome" id="inome"></p>
+    <p><label for="isobrenome">Sobrenome:</label>
+       <input type="text" name="sobrenome" id="isobrenome"> </p>
+    <p><input type="submit" value="Enviar"></p>
   </form>
 </body>
 </html>
