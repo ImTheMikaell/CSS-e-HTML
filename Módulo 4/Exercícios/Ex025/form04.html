@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de formulário</title>
+</head>
+<body>
+  <h1>Exemplo de formulário</h1>
+  <form action="cadastro" method="get">
+    <fieldset>
+      <legend>Dados pessoas</legend>
+      <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome">
+      </p>
+      <p>
+        <label for="iemail">E-mail</label>
+        <input type="email" name="mail" id="iemail" required>
+      </p>
+      <p>
+        <label for="itel">Telefone</label>
+        <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^[0-9]{4}-[0-9]{4}$">
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </p>
+    </fieldset>
+  </form>
+</body>
+</html>
