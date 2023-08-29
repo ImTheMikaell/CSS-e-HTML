@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de um formulário</title>
+</head>
+<body>
+  <h1>Exemplo de um formulário</h1>
+  <form action="cadastro" method="get">
+
+    <p>
+      <label for="inum">Número: </label>
+      <input type="range" name="num" id="inum" oninput="ival.innerHTML = inum.value" value="1" min="1" max="5">
+      <output id="ival">1</output>
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+</body>
+</html>
