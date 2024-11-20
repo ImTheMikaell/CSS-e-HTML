@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Box</title>
+
+  <style>
+    body > div {
+      margin: 10px
+    }
+
+    div.container1 {
+      background-color: lightblue;
+
+      display: flex;
+      flex-flow: row wrap-reverse;
+    }
+
+    div.container2 {
+      background-color: lightblue;
+
+      height: 100px;/* so funcina o wrap se existir um limite de altura, afinal so acontece a quebra quando chega ao limite de tamanho */
+
+      display: flex;
+      flex-flow: column wrap;
+    }
+
+    div.container3 {
+      background-color: lightblue;
+
+      display: flex;
+      flex-flow: row-reverse wrap;
+    }
+
+    div.container1 > div.item {
+      background-color: lightsalmon;
+      border: 1px solid black;
+
+      text-align: center;
+      flex: auto;
+    }
+
+    div.container2 > div.item {
+      background-color: gray;
+      border: 1px solid black; 
+
+      text-align: center;
+      flex: auto;
+    }
+
+    .container3 > .item {
+      background-color: cadetblue;
+      border: 1px solid black;
+
+      text-align: center;
+      flex: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container1">
+    <div class="item">Exemplo de bloco A</div>
+    <div class="item">Exemplo de bloco B</div>
+    <div class="item">Exemplo de bloco C</div>
+    <div class="item">Exemplo de bloco D</div>
+    <div class="item">Exemplo de bloco E</div>
+    <div class="item">Exemplo de bloco F</div>
+    <div class="item">Exemplo de bloco G</div>
+  </div>
+  <div class="container2">
+    <div class="item">Exemplo de bloco A</div>
+    <div class="item">Exemplo de bloco B</div>
+    <div class="item">Exemplo de bloco C</div>
+    <div class="item">Exemplo de bloco D</div>
+    <div class="item">Exemplo de bloco E</div>
+    <div class="item">Exemplo de bloco F</div>
+    <div class="item">Exemplo de bloco G</div>
+  </div>
+  <div class="container3">
+    <div class="item">Exemplo de bloco A</div>
+    <div class="item">Exemplo de bloco B</div>
+    <div class="item">Exemplo de bloco C</div>
+    <div class="item">Exemplo de bloco D</div>
+    <div class="item">Exemplo de bloco E</div>
+    <div class="item">Exemplo de bloco F</div>
+    <div class="item">Exemplo de bloco G</div>
+  </div>
+</body>
+</html>
